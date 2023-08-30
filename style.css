@@ -128,3 +128,56 @@ footer{
     margin-left: 30%;
     display: inline;
 }
+/*quando a tela estiver menor que 768px a @media vai operar */
+@media all and (max-width: 768px){
+    .header-nav ul {
+        visibility: hidden;
+    }
+    .header-nav h2{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        transform: translateX(49.8%);
+        padding-top: 5%;
+    }
+    #imagem-fundo h1 {
+        text-align: center;
+        padding-top: 20%;
+    }
+    .coluna, .coluna-desastres, 
+    .basica-info, #desastres h2, .desastres-aquecimento,
+    #grandes-responsaveis, #reflexao, #referencia,
+    .footer-nav, .footer-nav p {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    #reflexao{
+        width: 100%;
+    }
+    #reflexao h2{
+        position: relative;
+        padding: 2%;
+        text-align: center;
+    }
+    #reflexao img, #grandes-responsaveis img {
+        width: 90%;
+        padding: 4%;
+    }
+    #referencia ul{
+        padding: 2%;
+        text-align: left;
+        text-decoration: underline;
+    }
+    #referencia li {
+        padding-top: 3%;
+    }
+    footer{
+        height: 60vh;
+    }
+    .footer-nav p{
+        padding-top: 16%;
+    }
+}
